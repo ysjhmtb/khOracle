@@ -1,0 +1,24 @@
+<오라클 11g 설치하기>
+
+* 오라클이 이미 설치되어 있는 경우, 제거하기
+ 1. 제어판 > 관리도구 > 서비스 : 오라클 관련 서비스 모두 중지시킴
+ 2. 시작메뉴 > 보조프로그램 > 명령프롬프트 
+	> 마우스 우클릭 : 관리자 권한으로 실행 선택함
+ 3. 오라클 폴더 아래 / deinstall> deinstall.bat 실행함.
+	데이터베이스명 : orcl 또는 xe
+	> y > enter......... > 삭제 완료 메세지 확인함.
+ 4. 시스템 리부팅함
+ 5. 오라클 설치 폴더 삭제함(c:\oracle, c:\program files\oracle)
+	 > 메뉴 항목도 삭제함
+ 6. regedit (레지스트리 편집기) 실행함
+	=> 오라클 관련 항목을 찾아서 삭제함
+	HKEY_LOCAL_MACHINE/SOFTWARE/ORACLE key
+	HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/
+					Services/Ora*
+
+ 7. 휴지통 제거 > 리부팅
+ 8. 오라클 설치하기 : 설치시 암호 반드시 기억할 것
+
+
+참고 URL
+	- http://kyome.tistory.com/4
